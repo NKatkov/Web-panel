@@ -1,0 +1,31 @@
+{
+  "name": "WebPanel",
+  "version": "1.0.0",
+  "description": "WebPanel",
+  "main": "site.js",
+  "dependencies": {
+    "bson": "^0.4.20",
+    "connect": "^3.4.0",
+    "connect-mongodb": "^1.1.5",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.3",
+    "node-gyp": "^3.2.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NKatkov/Web-panel.git"
+  },
+  "author": "NKatkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NKatkov/Web-panel/issues"
+  },
+  "homepage": "https://github.com/NKatkov/Web-panel#readme"
+}
