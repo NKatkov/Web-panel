@@ -2,7 +2,7 @@ var express = require('express'),
     path = require('path'),
     app = module.exports = express();
     mongoStore = require('connect-mongodb'),
-    favicon = require(‘serve-favicon’),
+    favicon = require(serve-favicon"),
     Settings = { development: {}, test: {}, production: {} };
 
 
