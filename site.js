@@ -23,7 +23,7 @@ function mongoStoreConnectionArgs() {
 
 
   app.set('views', __dirname + '/views');
-  app.use(favicon());
+  //app.use(favicon());
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded());
   app.use(cookieЗarser());
