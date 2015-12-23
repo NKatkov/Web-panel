@@ -22,7 +22,7 @@ function mongoStoreConnectionArgs() {
 
 
   app.set('views', __dirname + '/views');
-  app.use(express.favicon());
+  app.use(favicon(options.favicon));
   app.use(express.bodyDecoder());
   app.use(express.cookieDecoder());
   app.use(express.session({store: mongoStore(mongoStoreConnectionArgs())}));
