@@ -1,6 +1,7 @@
 var express = require('express'),
     path = require('path'),
     bodyParser = require('body-parser'),
+    session = require('express-session'),
     cookieParser = require('cookie-parser'),
     app = module.exports = express(),
     mongoStore = require('connect-mongodb'),
