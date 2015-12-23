@@ -1,5 +1,6 @@
 var express = require('express'),
     path = require('path'),
+    bodyParser = require('body-parser')
     app = module.exports = express();
     mongoStore = require('connect-mongodb'),
     favicon = require("serve-favicon"),
@@ -23,7 +24,7 @@ function mongoStoreConnectionArgs() {
 
   app.set('views', __dirname + '/views');
   //app.use(favicon(options.favicon));
-  app.use(express.body-parser());
+  app.use(bodyParser());
   app.use(express.cookie-parser());
   app.use(express.session({store: mongoStore(mongoStoreConnectionArgs())}));
   app.use(express.logger({ format: '\x1b[1m:method\x1b[0m \x1b[33m:url\x1b[0m :response-time ms' }))
