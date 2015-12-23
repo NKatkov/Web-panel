@@ -6,6 +6,7 @@ var express = require('express'),
     morgan = require('morgan')
     app = module.exports = express(),
     mongoStore = require('connect-mongodb'),
+    mongoose = require('mongoose');
     favicon = require("serve-favicon"),
     Settings = { development: {}, test: {}, production: {} };
 
