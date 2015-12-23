@@ -23,8 +23,8 @@ function mongoStoreConnectionArgs() {
 
   app.set('views', __dirname + '/views');
   //app.use(favicon(options.favicon));
-  app.use(express.bodyDecoder());
-  app.use(express.cookieDecoder());
+  app.use(express.body-parser());
+  app.use(express.cookie-parser());
   app.use(express.session({store: mongoStore(mongoStoreConnectionArgs())}));
   app.use(express.logger({ format: '\x1b[1m:method\x1b[0m \x1b[33m:url\x1b[0m :response-time ms' }))
   app.use(express.methodOverride());
