@@ -1,7 +1,8 @@
 var express = require('express'),
     path = require('path'),
-    bodyParser = require('body-parser')
-    app = module.exports = express();
+    bodyParser = require('body-parser'),
+    bodyParser = require('cookie-parser'),
+    app = module.exports = express(),
     mongoStore = require('connect-mongodb'),
     favicon = require("serve-favicon"),
     Settings = { development: {}, test: {}, production: {} };
