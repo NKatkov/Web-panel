@@ -18,7 +18,8 @@ var staticSiteOptions = {
 };
 
 function mongoStoreConnectionArgs() {
-  return { db: "Web",
+  return { url: 'mongodb://localhost/Web',
+  	   db: "Web",
            host: "127.0.0.1",
            port: "27017",
            username: "admin",
