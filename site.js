@@ -34,7 +34,7 @@ function mongoStoreConnectionArgs() {
   app.use(morgan({ format: '\x1b[1m:method\x1b[0m \x1b[33m:url\x1b[0m :response-time ms' }))
 
   //app.use(express.compiler({ src: __dirname + '/public', enable: ['less'] }));
-  app.use(app.router);
+  //app.use(app.router);
   //app.use(express.staticProvider(__dirname + '/public'));
   app.use(express.static(path.join(__dirname, 'static'),staticSiteOptions)).listen(staticSiteOptions.portnum);
 
