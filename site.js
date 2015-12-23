@@ -23,14 +23,23 @@ function mongoStoreConnectionArgs() {
            username: "admin",
            password: "do5ita" };
 }
+const connection = mongoose.createConnection(mongoStoreConnectionArgs());
 
+var sessOpt = {
+	store: mongoStore({ mongooseConnection: connection }),
+	secret: "i2D#0wj38D_kZhW20&qA97hQQd@0/S81h",
+	rolling: true,
+	resave: false,
+	saveUninitialized: true,
+	unset: "destroy"
+};
 
   app.set('views', __dirname + '/views');
   //app.use(favicon());
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded());
   app.use(cookieParser());
-  app.use(session({store: mongoStore(mongoStoreConnectionArgs())}));
+  app.use(session(sessOpt));
   app.use(morgan({ format: '\x1b[1m:method\x1b[0m \x1b[33m:url\x1b[0m :response-time ms' }))
 
   //app.use(express.compiler({ src: __dirname + '/public', enable: ['less'] }));
