@@ -5,7 +5,7 @@ var express = require('express'),
     cookieParser = require('cookie-parser'),
     morgan = require('morgan')
     app = module.exports = express(),
-    mongoStore = require('connect-mongodb'),
+    mongoStore = require('connect-mongo'),
     mongoose = require('mongoose');
     favicon = require("serve-favicon"),
     Settings = { development: {}, test: {}, production: {} };
