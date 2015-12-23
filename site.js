@@ -19,11 +19,11 @@ var staticSiteOptions = {
 
 function mongoStoreConnectionArgs() {
   return { url: 'mongodb://localhost/Web',
-  	   db: "Web",
-           host: "127.0.0.1",
-           port: "27017",
-           username: "admin",
-           password: "do5ita" };
+  	   //db: "Web",
+           //host: "127.0.0.1",
+           //port: "27017",
+           //username: "admin",
+           //password: "do5ita" };
 }
 const connection = mongoose.createConnection(mongoStoreConnectionArgs());
 
