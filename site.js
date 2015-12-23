@@ -23,9 +23,10 @@ function mongoStoreConnectionArgs() {
 
 
   app.set('views', __dirname + '/views');
-  //app.use(favicon(options.favicon));
-  app.use(express.bodyParser());
-  app.use(express.cookie-parser());
+  app.use(favicon());
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded());
+  app.use(cookieЗarser());
   app.use(express.session({store: mongoStore(mongoStoreConnectionArgs())}));
   app.use(express.logger({ format: '\x1b[1m:method\x1b[0m \x1b[33m:url\x1b[0m :response-time ms' }))
   app.use(express.methodOverride());
