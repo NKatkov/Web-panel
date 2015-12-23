@@ -29,7 +29,7 @@ function mongoStoreConnectionArgs() {
 const connection = mongoose.createConnection(mongoStoreConnectionArgs());
 
 var sessOpt = {
-	store: mongoStore({ mongooseConnection: connection }),
+	store: mongoStore({ mongoStoreConnectionArgs() }),
 	secret: "i2D#0wj38D_kZhW20&qA97hQQd@0/S81h",
 	rolling: true,
 	resave: false,
