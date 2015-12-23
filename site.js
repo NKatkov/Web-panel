@@ -17,19 +17,19 @@ var staticSiteOptions = {
    maxAge: 1000 * 60 * 15 // хранить страницы в кэше пятнадцать минут
 };
 
-function mongoStoreConnectionArgs() {
-  return { url: "mongodb://localhost/Stat"//,
+Var mongoStoreConnectionArgs = {
+ url: "mongodb://admin:do5ita@localhost/Stat"//,
   	   //db: "Web",
            //host: "127.0.0.1",
            //port: "27017",
            //username: "admin",
            //password: "do5ita" 
-           };
-}
-const connection = mongoose.createConnection(mongoStoreConnectionArgs());
+};
+
+const connection = mongoose.createConnection(mongoStoreConnectionArgs;
 
 var sessOpt = {
-	store: mongoStore( mongoStoreConnectionArgs() ),
+	store: mongoStore( mongoStoreConnectionArgs ),
 	secret: "i2D#0wj38D_kZhW20&qA97hQQd@0/S81h",
 	rolling: true,
 	resave: false,
