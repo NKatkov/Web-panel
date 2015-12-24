@@ -26,7 +26,7 @@ var mongoStoreConnectionArgs = {
            //password: "do5ita" 
 };
 
-const connection = mongoose.createConnection(mongoStoreConnectionArgs);
+const connection = mongoose.createConnection('mongodb://admin:do5ita@localhost:27017/Stat');
 
 var sessOpt = {
 	store: mongoStore( { mongooseConnection: connection } ),
