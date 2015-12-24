@@ -17,8 +17,8 @@ var staticSiteOptions = {
    maxAge: 1000 * 60 * 15 // хранить страницы в кэше пятнадцать минут
 };
 
-Var mongoStoreConnectionArgs = {
- url: "mongodb://admin:do5ita@localhost/Stat"//,
+var mongoStoreConnectionArgs = {
+ url: 'mongodb://admin:do5ita@localhost/Stat'
   	   //db: "Web",
            //host: "127.0.0.1",
            //port: "27017",
