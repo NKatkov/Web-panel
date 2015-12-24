@@ -5,7 +5,7 @@ var express = require('express'),
     cookieParser = require('cookie-parser'),
     morgan = require('morgan')
     app = module.exports = express(),
-    mongoStore = require('connect-mongo'),
+    mongoStore = require('connect-mongo')(session),
     mongoose = require('mongoose');
     favicon = require("serve-favicon"),
     Settings = { development: {}, test: {}, production: {} };
@@ -29,7 +29,7 @@ var mongoStoreConnectionArgs = {
 const connection = mongoose.createConnection(mongoStoreConnectionArgs);
 
 var sessOpt = {
-	store: mongoStore( mongoStoreConnectionArgs ),
+	store: mongoStore( { mongooseConnection: connection } ),
 	secret: "i2D#0wj38D_kZhW20&qA97hQQd@0/S81h",
 	rolling: true,
 	resave: false,
