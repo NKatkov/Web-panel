@@ -18,7 +18,7 @@ var staticSiteOptions = {
 };
 
 var mongoStoreConnectionArgs = {
- db-uri: 'mongodb://admin:do5ita@localhost:27017/Stat'
+ url: 'mongodb://admin:do5ita@localhost:27017/Stat'
   	   //db: "Web",
            //host: "127.0.0.1",
            //port: "27017",
