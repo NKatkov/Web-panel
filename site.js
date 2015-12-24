@@ -26,7 +26,7 @@ var mongoStoreConnectionArgs = {
            //password: "do5ita" 
 };
 
-const connection = mongoose.createConnection(mongoStoreConnectionArgs;
+const connection = mongoose.createConnection(mongoStoreConnectionArgs);
 
 var sessOpt = {
 	store: mongoStore( mongoStoreConnectionArgs ),
